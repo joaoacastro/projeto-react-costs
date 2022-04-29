@@ -1,8 +1,4 @@
-.container{
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 10px;
-    
+.container {
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -10,6 +6,15 @@
     flex-wrap: wrap;
 }
 
-.min-height{
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.min-height {
     min-height: 75%;
 }

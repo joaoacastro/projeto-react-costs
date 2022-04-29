@@ -1,4 +1,10 @@
+import styles from './Footer.module.css'
+
 function Footer() {
-  return <p>Footer</p>;
+  return(
+    <div className={styles.container}>
+      <p>Footer</p>
+    </div>
+  )
 }
 export default Footer;

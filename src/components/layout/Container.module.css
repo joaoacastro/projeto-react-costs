@@ -4,6 +4,9 @@
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .start {

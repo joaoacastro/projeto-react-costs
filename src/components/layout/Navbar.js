@@ -9,9 +9,17 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Container>
-        <Link to="/">
-          <img src={logo} alt="Costs" />
-        </Link>
+        <div className={styles.container}>
+          <Link to="/">
+            <img src={logo} alt="Costs" />
+          </Link>
+          <ul className={styles.list}>
+            <li className={styles.item}>
+              <Link to="/newProject">Criar Projeto</Link>
+            </li>
+          </ul>
+        </div>
+
         <ul className={styles.list}>
           <li className={styles.item}>
             <Link to="/">Home</Link>

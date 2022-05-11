@@ -12,17 +12,6 @@
       "id": 1
     },
     {
-      "name": "lifu",
-      "budget": "35000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "projeto 3",
       "budget": "1801",
       "category": {
@@ -32,6 +21,17 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "teste",
+      "budget": "30540",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [

@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "teste",
+      "name": "projeto 1",
       "budget": "10000",
       "category": {
         "id": "1",
@@ -12,7 +12,7 @@
       "id": 1
     },
     {
-      "name": "projeto 3",
+      "name": "projeto 2",
       "budget": "1801",
       "category": {
         "id": "4",
@@ -22,17 +22,6 @@
       "services": [],
       "id": 3
     },
-    {
-      "name": "teste",
-      "budget": "30540",
-      "category": {
-        "id": "1",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    }
   ],
   "categories": [
     {

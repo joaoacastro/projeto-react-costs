@@ -44,7 +44,7 @@ function Projects() {
               name={project.name}
               budget={project.budget}
               category={project.category.name}
-              key={project.key}
+              key={project.id}
             />
           ))}
       </Container>

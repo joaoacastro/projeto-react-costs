@@ -4,6 +4,7 @@
     border-radius: 5px;
     width: 24%;
     margin: 0.5%;
+    transition: 0.5s;
 }
 
 .project_card:hover{
@@ -12,12 +13,6 @@
 
 .project_card:hover p{
     color: rgb(0, 0, 0);
-}
-
-.project_card:hover h4{
-    color: rgb(0, 0, 0);
-    background-color: rgb(248, 219, 56);
-    border: 1px solid rgb(0, 0, 0);
 }
 
 .project_card h4 {
@@ -32,6 +27,7 @@
 .project_card p {
     color: #7a7a7a;
     margin-bottom: 1em;
+    transition: 0.5s;
 }
 
 .project_card p span {
@@ -99,5 +95,5 @@
 .project_card_actions a:hover,
 .project_card_actions button:hover {
     background-color: #222;
-    color: #FFF;
+    color: #FFBB33;
 }

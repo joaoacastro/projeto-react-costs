@@ -1,15 +1,37 @@
 {
   "projects": [
     {
-      "name": "Project Two",
-      "budget": "54.821",
+      "name": "project one",
+      "budget": "97.654",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
+      "id": 1
+    },
+    {
+      "name": "Project Two",
+      "budget": "159.892",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
       "id": 2
+    },
+    {
+      "name": "project green",
+      "budget": "654.852",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [

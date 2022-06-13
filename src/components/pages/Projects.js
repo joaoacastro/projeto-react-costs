@@ -44,7 +44,7 @@ function Projects() {
       },
     })
       .then((resp) => resp.json())
-      .then(data => {
+      .then(() => {
         setProjects(projects.filter((project) => project.id !== id))
         setProjectMessage('Projeto excluído com sucesso!')
       })

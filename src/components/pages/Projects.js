@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Message from "../layout/Message";
 import Container from "../layout/Container";
-import Loading from '../layout/Loading';
+import Loading from "../layout/Loading";
 import ProjectCard from "../project/ProjectCard";
 
 import styles from "./Projects.module.css";
@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [removeLoading, setRemoveLoading] = useState(false)
+  const [removeLoading, setRemoveLoading] = useState(false);
 
   const location = useLocation();
   let message = "";
@@ -29,10 +29,10 @@ function Projects() {
         .then((data) => {
           console.log(data);
           setProjects(data);
-          setRemoveLoading(true)
+          setRemoveLoading(true);
         })
         .catch((err) => console.log(err));
-    }, 300)
+    }, 300);
   }, []);
 
   return (
@@ -52,7 +52,10 @@ function Projects() {
               key={project.id}
             />
           ))}
-          {!removeLoading && <Loading />}
+        {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <p>Não há projetos cadastrados!</p>
+        )}
       </Container>
     </div>
   );

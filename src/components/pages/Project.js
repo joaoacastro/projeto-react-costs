@@ -38,7 +38,7 @@ function Project() {
       <Container customClass="column">
         <div>
           <h1>Projeto: {project.name}</h1>
-
+          <br />
           {!showProjectForm ? (
             <div>
               <p>
@@ -56,7 +56,7 @@ function Project() {
               <p>Detalhes do projeto</p>
             </div>
           )}
-
+          <br />
           <button onClick={toggleProjectForm}>
             {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
           </button>

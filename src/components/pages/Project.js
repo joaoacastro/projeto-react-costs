@@ -57,7 +57,7 @@ function Project() {
             </div>
           )}
           <br />
-          <button onClick={toggleProjectForm}>
+          <button className={styles.btn} onClick={toggleProjectForm}>
             {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
           </button>
         </div>

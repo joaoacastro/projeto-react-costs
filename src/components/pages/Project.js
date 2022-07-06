@@ -38,7 +38,9 @@ function Project() {
       <Container customClass="column">
         <div className={styles.details_container}>
           <h1>Projeto: {project.name}</h1>
-          <br />
+          <button className={styles.btn} onClick={toggleProjectForm}>
+            {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
+          </button>
           {!showProjectForm ? (
             <div className={styles.project_info}>
               <p>
@@ -52,14 +54,10 @@ function Project() {
               </p>
             </div>
           ) : (
-            <div className={styles.project_info}>
+            <div className={styles.project_info }>
               <p>Form</p>
             </div>
           )}
-          <br />
-          <button className={styles.btn} onClick={toggleProjectForm}>
-            {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
-          </button>
         </div>
       </Container>
     </div>

@@ -34,7 +34,7 @@ function Project() {
   }
 
   return <>{project.name ? 
-    <div>
+    <div className={styles.project_details}>
       <Container customClass="column">
         <div className={styles.details_container}>
           <h1>Projeto: {project.name}</h1>
@@ -53,7 +53,7 @@ function Project() {
             </div>
           ) : (
             <div className={styles.project_info}>
-              <p>Detalhes do projeto</p>
+              <p>Form</p>
             </div>
           )}
           <br />

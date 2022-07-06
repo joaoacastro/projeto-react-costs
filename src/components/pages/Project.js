@@ -36,7 +36,7 @@ function Project() {
   return <>{project.name ? 
     <div>
       <Container customClass="column">
-        <div>
+        <div className={styles.details_container}>
           <h1>Projeto: {project.name}</h1>
           <br />
           {!showProjectForm ? (

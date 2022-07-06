@@ -14,7 +14,7 @@
     padding: 1.4em;
 }
 
-.project_details span {
+.project_info span {
     font-weight: bold;
 }
 
@@ -44,4 +44,8 @@
     color: #FFBB33;
     border-radius: 1em;
     transform: scale(1.1);
+}
+
+.project_info {
+    width: 100%;
 }

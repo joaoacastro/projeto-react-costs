@@ -40,7 +40,7 @@ function Project() {
           <h1>Projeto: {project.name}</h1>
           <br />
           {!showProjectForm ? (
-            <div>
+            <div className={styles.project_info}>
               <p>
                 <span>Categoria:</span> {project.category.name}
               </p>
@@ -52,7 +52,7 @@ function Project() {
               </p>
             </div>
           ) : (
-            <div>
+            <div className={styles.project_info}>
               <p>Detalhes do projeto</p>
             </div>
           )}

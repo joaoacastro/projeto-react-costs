@@ -32,7 +32,8 @@
 }
 
 .btn {
-    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: #222;
     color: #fff;
     padding: 0.5em 1em;

@@ -7,7 +7,9 @@
 .project_details h1 {
     background-color: #222;
     color: #FFBB33;
-    padding: 1.4em;
+    padding: 0.5em;
+    padding-left: 100px;
+    padding-right: 100px;
     border-radius: 10px;
 }
 
@@ -30,6 +32,7 @@
 }
 
 .btn {
+    margin-top: 10px;
     background-color: #222;
     color: #fff;
     padding: 0.5em 1em;

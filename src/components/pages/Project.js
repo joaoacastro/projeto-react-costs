@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 import Loading from "../layout/Loading";
 import Container from "../layout/Container";
-
+import ProjectForm from "../project/ProjectForm";
 
 function Project() {
   const { id } = useParams();
@@ -29,39 +29,56 @@ function Project() {
     }, 3000);
   }, [id]);
 
+  function editPost(){
+
+  }
+  
   function toggleProjectForm() {
-    setShowProjectForm(!showProjectForm)
+    setShowProjectForm(!showProjectForm);
   }
 
-  return <>{project.name ? 
-    <div className={styles.project_details}>
-      <Container customClass="column">
-        <div className={styles.details_container}>
-          <h1>Projeto: <span className={styles.project_name}>{project.name}</span></h1>
-          <button className={styles.btn} onClick={toggleProjectForm}>
-            {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
-          </button>
-          {!showProjectForm ? (
-            <div className={styles.project_info}>
-              <p>
-                <span>Categoria:</span> {project.category.name}
-              </p>
-              <p>
-                <span>Total Orçamento:</span> R${project.budget}
-              </p>
-              <p>
-                <span>Total Utilizado:</span> R${project.cost}
-              </p>
+  return (
+    <>
+      {project.name ? (
+        <div className={styles.project_details}>
+          <Container customClass="column">
+            <div className={styles.details_container}>
+              <h1>
+                Projeto:{" "}
+                <span className={styles.project_name}>{project.name}</span>
+              </h1>
+              <button className={styles.btn} onClick={toggleProjectForm}>
+                {!showProjectForm ? "Editar Projeto" : "Fechar"}
+              </button>
+              {!showProjectForm ? (
+                <div className={styles.project_info}>
+                  <p>
+                    <span>Categoria:</span> {project.category.name}
+                  </p>
+                  <p>
+                    <span>Total Orçamento:</span> R${project.budget}
+                  </p>
+                  <p>
+                    <span>Total Utilizado:</span> R${project.cost}
+                  </p>
+                </div>
+              ) : (
+                <div className={styles.project_info}>
+                  <ProjectForm
+                    handleSubmit={editPost}
+                    btnTExt="Concluir edição"
+                    projectData={project}
+                  />
+                </div>
+              )}
             </div>
-          ) : (
-            <div className={styles.project_info }>
-              <p>Form</p>
-            </div>
-          )}
+          </Container>
         </div>
-      </Container>
-    </div>
-    : <Loading />}</>;
+      ) : (
+        <Loading />
+      )}
+    </>
+  );
 }
 
 export default Project;

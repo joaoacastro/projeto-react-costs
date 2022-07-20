@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "Project 01",
-      "budget": "70719.90",
+      "name": "Project 01 (atualizado_2)",
+      "budget": "150000.00",
       "category": {
         "id": "1",
         "name": "Infraestrutura"

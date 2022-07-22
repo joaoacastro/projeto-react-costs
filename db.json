@@ -1,35 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Project X",
-      "budget": "50.498",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Project Z",
-      "budget": "50000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 10000,
-      "services": [
-        {
-          "name": "servico 1",
-          "cost": "10000",
-          "description": "opa",
-          "id": "831d8e3b-d55f-467a-8153-f39ea6f10462"
-        }
-      ],
-      "id": 3
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,

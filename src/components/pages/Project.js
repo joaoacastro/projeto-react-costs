@@ -44,8 +44,9 @@ function Project() {
 
     // budget validation
     if (project.budget < project.cost) {
-      setMessage("O orçamento não pode ser menor que o custo do projeto!");
-      setType("error");
+      alert("O orçamento não pode ser menor que o custo do projeto!");
+      // setMessage("O orçamento não pode ser menor que o custo do projeto!");
+      // setType("error");
       return false;
     }
 
@@ -68,21 +69,21 @@ function Project() {
   function createService(project) {
     setMessage("");
 
-    // fetch(`http://localhost:5000/projects/${project.id}`, {
-    //   method: "PATCH",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(project),
-    // })
-    //   .then((resp) => resp.json())
-    //   .then((data) => {
-    //     setProject(data);
-    //     setShowProjectForm(false);
-    //     setMessage("Serviço incluído com sucesso!");
-    //     setType("success");
-    //   })
-    //   .catch((err) => console.log(err));
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(project),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProject(data);
+        setShowProjectForm(false);
+        setMessage("Serviço incluído com sucesso!");
+        setType("success");
+      })
+      .catch((err) => console.log(err));
 
     // last service
     const lastService = project.services[project.services.length - 1];
@@ -146,7 +147,7 @@ function Project() {
         setProject(projectUpdated);
         setServices(servicesUpdated);
         setMessage("Serviço removido com sucesso!");
-
+        setType("delete");
       })
       .catch((err) => console.log(err));
   }

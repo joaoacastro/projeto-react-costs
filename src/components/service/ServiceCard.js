@@ -1,15 +1,10 @@
 import styles from "../project/ProjectCard.module.css";
 
-import {BsFillTrashFill} from 'react-icons/bs'
-
-import { useState, useEffect } from "react";
+import {BsFillTrashFill} from 'react-icons/bs';
 
 function ServiceCard({ id, name, cost, description, handleRemove }) {
 
-    const [message, setMessage] = useState();
-
     const remove = (e) => {
-        //setMessage("")
 
         e.preventDefault()
         handleRemove(id, cost)

@@ -36,11 +36,11 @@ function Project() {
           setServices(data.services);
         })
         .catch((err) => console.log);
-    }, 300);
+    }, 3000);
   }, [id]);
 
   function editPost(project) {
-    setMessage('');
+    setMessage("");
 
     // budget validation
     if (project.budget < project.cost) {
@@ -66,7 +66,23 @@ function Project() {
       .catch((err) => console.log(err));
   }
   function createService(project) {
-    setMessage('');
+    setMessage("");
+
+    // fetch(`http://localhost:5000/projects/${project.id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(project),
+    // })
+    //   .then((resp) => resp.json())
+    //   .then((data) => {
+    //     setProject(data);
+    //     setShowProjectForm(false);
+    //     setMessage("Serviço incluído com sucesso!");
+    //     setType("success");
+    //   })
+    //   .catch((err) => console.log(err));
 
     // last service
     const lastService = project.services[project.services.length - 1];
@@ -101,12 +117,39 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setShowServiceForm(false)
+        setShowServiceForm(false);
       })
       .catch((err) => console.log(err));
   }
 
-  function removeService() {}
+  function removeService(id, cost) {
+    setMessage("")
+
+    const servicesUpdated = project.services.filter(
+      (service) => service.id !== id
+    );
+
+    const projectUpdated = project;
+
+    projectUpdated.services = servicesUpdated;
+    projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost);
+
+    fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(projectUpdated),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProject(projectUpdated);
+        setServices(servicesUpdated);
+        setMessage("Serviço removido com sucesso!");
+
+      })
+      .catch((err) => console.log(err));
+  }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
@@ -179,8 +222,7 @@ function Project() {
                     key={service.id}
                     handleRemove={removeService}
                   />
-                ))
-              }
+                ))}
               {services.length === 0 && <p>Não há serviços cadastrados!</p>}
             </Container>
           </Container>

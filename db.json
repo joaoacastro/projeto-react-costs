@@ -1,73 +1,6 @@
 {
   "projects": [
     {
-      "name": "Project 01 (v.4)",
-      "budget": "51000",
-      "category": {
-        "id": "1",
-        "name": "Infraestrutura"
-      },
-      "cost": 8103,
-      "services": [
-        {},
-        {
-          "name": "meu novo serviço",
-          "cost": "100",
-          "description": "faz isso",
-          "id": "93183149-ca78-4be2-b026-f4ad76813470"
-        },
-        {
-          "name": "novo",
-          "cost": "100",
-          "description": "este",
-          "id": "8d5663ca-5648-4a3f-92cb-6d47e997a67f"
-        },
-        {
-          "name": "serviço C",
-          "cost": "52",
-          "description": "tudo isso",
-          "id": "102e075b-19a9-4d5d-ba2f-f0573b53a840"
-        },
-        {
-          "name": "serviço F",
-          "cost": "210",
-          "description": "este outro tbm",
-          "id": "1eb4b272-7186-4043-bfa0-4517921c36d6"
-        },
-        {
-          "name": "serviço F",
-          "cost": "210",
-          "description": "este outro tbm",
-          "id": "1eb4b272-7186-4043-bfa0-4517921c36d6"
-        },
-        {
-          "name": "serviço G",
-          "description": "outro",
-          "cost": "123",
-          "id": "698bf7c9-5b7d-4a9d-afe1-781b6260c486"
-        },
-        {
-          "name": "teste",
-          "cost": "987",
-          "description": "outro",
-          "id": "57de0314-8305-4585-81c3-9e4a2f82e0b9"
-        },
-        {
-          "name": "serviço L",
-          "cost": "67321",
-          "description": "outro",
-          "id": "a497f7cb-b3f3-4e89-ad9b-8f1e01242789"
-        },
-        {
-          "name": "serviço L",
-          "cost": "6321",
-          "description": "outro",
-          "id": "943add0d-4fb2-42af-bcf4-c1567a47053a"
-        }
-      ],
-      "id": 1
-    },
-    {
       "name": "Project X",
       "budget": "50.498",
       "category": {
@@ -77,6 +10,24 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Project Z",
+      "budget": "50000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 10000,
+      "services": [
+        {
+          "name": "servico 1",
+          "cost": "10000",
+          "description": "opa",
+          "id": "831d8e3b-d55f-467a-8153-f39ea6f10462"
+        }
+      ],
+      "id": 3
     }
   ],
   "categories": [

@@ -1,15 +1,15 @@
 # Gerenciador de Projeto - Costs
 
-<img width="300em" src="./src/img/Home.png">
-<img width="300em" src="./src/img/Projects(empty).png">
-<img width="300em" src="./src/img/NewProject.png">
-<img width="300em" src="./src/img/Projects.png">
-<img width="300em" src="./src/img/EditProject.png">
-<img width="300em" src="./src/img/Services(add).png">
-<img width="300em" src="./src/img/Services.png">
-<img width="300em" src="./src/img/Services(remove).png">
-<img width="300em" src="./src/img/Services(error).png">
-<img width="300em" src="./src/img/Projects(remove).png">
+<img width="600em" src="./src/img/Home.png">
+<img width="600em" src="./src/img/Projects(empty).png">
+<img width="600em" src="./src/img/NewProject.png">
+<img width="600em" src="./src/img/Projects.png">
+<img width="600em" src="./src/img/EditProject.png">
+<img width="600em" src="./src/img/Services(add).png">
+<img width="600em" src="./src/img/Services.png">
+<img width="600em" src="./src/img/Services(remove).png">
+<img width="600em" src="./src/img/Services(error).png">
+<img width="600em" src="./src/img/Projects(remove).png">
 
 # Getting Started with Create React App
 

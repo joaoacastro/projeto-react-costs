@@ -1,5 +1,5 @@
 # Gerenciador de Projeto - Costs
-<img src="./src/img/print.png">
+<img height="300em" src="./src/img/print.png">
 
 # Getting Started with Create React App
 

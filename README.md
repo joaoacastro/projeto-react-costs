@@ -1,5 +1,15 @@
 # Gerenciador de Projeto - Costs
-<img src="./src/img/print.png">
+
+<img height="300em" src="./src/img/Home.png">
+<img height="300em" src="./src/img/Projects(empty).png">
+<img height="300em" src="./src/img/NewProject.png">
+<img height="300em" src="./src/img/Projects.png">
+<img height="300em" src="./src/img/EditProject.png">
+<img height="300em" src="./src/img/Services(add).png">
+<img height="300em" src="./src/img/Services.png">
+<img height="300em" src="./src/img/Services(remove).png">
+<img height="300em" src="./src/img/Services(error).png">
+<img height="300em" src="./src/img/Projects(remove).png">
 
 # Getting Started with Create React App
 

@@ -69,22 +69,6 @@ function Project() {
   function createService(project) {
     setMessage("");
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(project),
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setProject(data);
-        setShowProjectForm(false);
-        setMessage("Serviço incluído com sucesso!");
-        setType("success");
-      })
-      .catch((err) => console.log(err));
-
     // last service
     const lastService = project.services[project.services.length - 1];
 

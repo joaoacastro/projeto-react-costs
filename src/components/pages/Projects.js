@@ -10,10 +10,11 @@ import { useState, useEffect } from "react";
 function Projects() {
   const [projects, setProjects] = useState([]);
   const [removeLoading, setRemoveLoading] = useState(false);
-  const [projectMessage, setProjectMessage] = useState('')
+  const [projectMessage, setProjectMessage] = useState('');
 
   const location = useLocation();
   let message = "";
+
   if (location.state) {
     message = location.state.message;
   }
@@ -37,6 +38,8 @@ function Projects() {
   }, []);
 
   function removeProject(id) {
+    setProjectMessage("")
+
     fetch(`http://localhost:5000/projects/${id}`, {
       method: "DELETE",
       headers: {

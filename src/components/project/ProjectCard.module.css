@@ -53,7 +53,7 @@
 }
 
 .category_text .desenvolvimento {
-    background-color: #A0E7E5;
+    background-color: #c390cf;
 }
 
 .category_text .design {
@@ -62,6 +62,10 @@
 
 .category_text .planejamento {
     background-color: #F3D097;
+}
+
+.category_text .outro{
+    background-color: #b1b0ae;
 }
 
 .project_card_actions {

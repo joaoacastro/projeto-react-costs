@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 
 import styles from "./Project.module.css";
 
@@ -44,9 +44,9 @@ function Project() {
 
     // budget validation
     if (project.budget < project.cost) {
-      alert("O orçamento não pode ser menor que o custo do projeto!");
-      // setMessage("O orçamento não pode ser menor que o custo do projeto!");
-      // setType("error");
+
+      window.alert("O orçamento não pode ser menor que o custo do projeto!");
+
       return false;
     }
 
@@ -81,16 +81,16 @@ function Project() {
     // maximum value validation
 
     if (newCost > parseFloat(project.budget)) {
-      setMessage(
-        "Orçamento ultrapassado, por favor verifique o valor do serviço"
-      );
-      setType("error");
+
+      window.alert(`Ops, parece que o custo deste serviço ultrapassou o orçamento. \n Por favor, verifique o valor do serviço e tente novamente.`)
+
       project.service.pop();
       return false;
     }
 
     //add service cost to project total cost
     project.cost = newCost;
+    setMessage("")
 
     // update project
     fetch(`http://localhost:5000/projects/${project.id}`, {
@@ -103,6 +103,8 @@ function Project() {
       .then((resp) => resp.json())
       .then((data) => {
         setShowServiceForm(false);
+        setMessage("Serviço adicionado com sucesso!");
+        setType("success");
       })
       .catch((err) => console.log(err));
   }

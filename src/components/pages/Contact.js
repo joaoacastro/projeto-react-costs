@@ -10,7 +10,7 @@ function Contact() {
       </div>
       <div className={styles.contact_container}>
         <p>
-          Projeto FullStack CRUD (Creat, Read, Update e Delete) desenvolvido por
+          Projeto FullStack CRUD (Create, Read, Update e Delete) desenvolvido por
           <a
             href="https://www.linkedin.com/in/joao-ac-castro/"
             target="_blank"

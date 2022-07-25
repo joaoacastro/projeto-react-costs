@@ -7,13 +7,19 @@ function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
         <li>
-          <FaFacebook />
+          <a className={styles.a_footer} href="http://www.facebook.com" target="_blank" rel="noreferrer">
+            <FaFacebook />
+          </a>
         </li>
         <li>
-          <FaInstagram />
+          <a className={styles.a_footer} href="http://www.instagram.com" target="_blank" rel="noreferrer">
+            <FaInstagram />
+          </a>
         </li>
         <li>
-          <FaLinkedin />
+          <a className={styles.a_footer} href="http://www.linkedin.com" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
         </li>
       </ul>
       <p className={styles.copy_right}>

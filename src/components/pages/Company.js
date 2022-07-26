@@ -6,7 +6,7 @@ function Company() {
       <div className={styles.title_container}>
         <h1>Empresa</h1>
       </div>
-      <p align="justify">
+      <p align="justify" className={styles.paragraph}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni omnis
         dignissimos nulla eius adipisci asperiores quis, eaque tenetur soluta
         nobis repudiandae voluptatibus rem, corrupti quas error maxime

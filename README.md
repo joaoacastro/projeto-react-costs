@@ -6,6 +6,15 @@
 <img width="400em" src="./src/img/Services.png"> <img width="400em" src="./src/img/Services(remove).png">
 <img width="400em" src="./src/img/Services(error).png"> <img width="400em" src="./src/img/Projects(remove).png">
 
+<br>
+Thanks for visiting my project 😉
+<br>
+<br>
+<i>You can check out other projects I've developed here on my GitHub, or contact me through the other links.</i>
+<br>
+<a href = "mailto:joaoaccastro@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/joao-ac-castro" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
